@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
-scalaSource in Compile <<= baseDirectory(_ / "src")
+scalaSource in Compile := baseDirectory(_ / "src").value
 
-scalaSource in Test <<= baseDirectory(_ / "test")
+scalaSource in Test := baseDirectory(_ / "test").value
 
