@@ -1,0 +1,12 @@
+*~
+.#*
+*#
+
+*.dat
+*.out
+
+.history
+
+target/
+project/
+!project/build.properties
